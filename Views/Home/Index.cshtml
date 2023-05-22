@@ -41,6 +41,14 @@ else
     <p>No se han creado paquetes turísticos.</p>
 }
 <br>
+<form action='@Url.Action("BorrarPaquete")'>
+<div>
+Ingrese el paquete que quiere borrar:
+<input type="text" name="Clave" placeholder="Ingrese el nombre del destino">
+<input type="Submit" name="Enviar">
+</div>
+</form>
+<br>
 <a href='@Url.Action("Selectpaquete")'>Crear Paquete</a>
 
 </body>

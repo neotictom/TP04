@@ -46,6 +46,11 @@ public class HomeController : Controller
         ViewBag.Paquetes = ORTWorld.Paquetes;
         return View("Index");
         }
+    }public IActionResult BorrarPaquete(string Clave){
+        if(Clave != null){
+        ORTWorld.Paquetes.Remove(Clave);
+        }
+        return View("Index");
     }
     public IActionResult Privacy()
     {
