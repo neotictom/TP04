@@ -164,3 +164,8 @@ D:\Downloads\TP04-master\obj\Debug\net6.0\refint\TP04.dll
 D:\Downloads\TP04-master\obj\Debug\net6.0\TP04.pdb
 D:\Downloads\TP04-master\obj\Debug\net6.0\TP04.genruntimeconfig.cache
 D:\Downloads\TP04-master\obj\Debug\net6.0\ref\TP04.dll
+C:\Users\47496739\Downloads\TP04-Neimerman_Sedam\obj\Debug\net6.0\staticwebassets\msbuild.TP04.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\47496739\Downloads\TP04-Neimerman_Sedam\obj\Debug\net6.0\staticwebassets\msbuild.build.TP04.props
+C:\Users\47496739\Downloads\TP04-Neimerman_Sedam\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP04.props
+C:\Users\47496739\Downloads\TP04-Neimerman_Sedam\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP04.props
+C:\Users\47496739\Downloads\TP04-Neimerman_Sedam\obj\Debug\net6.0\staticwebassets.pack.json
