@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Lista de Paquetes Turísticos</h1>
+
+@if (ViewBag.VerificarPaquete != false)
+{
+    <table>
+        <tr>
+            <th>Destino</th>
+            <th>Hotel</th>
+            <th>Aéreo</th>
+            <th>Excursión</th>
+        </tr>
+        @foreach (var paquete in ViewBag.Paquetes)
+        {
+            <tr>
+                <td>@paquete.Key</td>
+                <td><img src="@Url.Content(paquete.Value.Hotel)" width="240" height="120"></td>
+                <td><img src="@Url.Content(paquete.Value.Aereos)" width="240" height="120"></td>
+                <td><img src="@Url.Content(paquete.Value.Excursion)" width="240" height="120"></td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No se han creado paquetes turísticos.</p>
+}
+
+<a href='@Url.Action("Selectpaquete")'>Crear Paquete</a>
+
+</body>
+</html>

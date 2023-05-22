@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Seleccionar paquete";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='@Url.Content("~/estilo.css")'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Seleccionar paquete</h1></header>
+    <br>
+    <form action='@Url.Action("GuardarPaquete")'>
+    <h4>Destino</h4>
+    <br>
+    @for (int i = 0; i < ViewBag.Destinos.Count; i++)
+    {
+        <h5>@i @ViewBag.Destinos[i] </h5>
+        
+    }
+    <br>
+    <input type="number">
+    <br>
+    @foreach(var i in ViewBag.Hoteles) {
+            <img src="@Url.Content(i)" width="19%" height="auto" alt="hotel"> </img>
+        }
+        <br>
+    <input type="number">
+    <br>
+    <h4>Aereo</h4>
+    <br>
+     @foreach(var i in ViewBag.Aereos) {
+            <img src="@Url.Content(i)" width="19%" height="auto" alt="aereo"> </img>
+        }
+     <input type="number">
+     <br>
+    <h4>Excursion</h4>
+    <br>  
+      @foreach(var i in ViewBag.Excursiones) {
+            <img src="@Url.Content(i)" width="19%" height="auto" alt="excursion"> </img>
+        }
+     <input type="number">   
+    <br>
+    <input type="submit">
+    </form>
+    
+
+</body>
+</html>
