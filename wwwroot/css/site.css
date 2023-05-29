@@ -40,10 +40,17 @@ tr{
 }
 th{
   text-align: center;
+  border: 5px solid black;
   color: navy;
 }
 td{
   text-align: center;
   color: navy;
+  border: 5px solid black;
+}
+img{
+  border: 5px solid white;
+  border-radius:  5;
+ 
 }
 

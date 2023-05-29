@@ -26,7 +26,7 @@
     <input type="number" name="Destino">
     <br>
     @foreach(var i in ViewBag.Hoteles) {
-            <img src="@Url.Content(i)" width="240" height="auto" alt="hotel"> </img>
+            <img src="@Url.Content(i)" width="240" height="120" alt="hotel"> </img>
         }
         <br>
     <input type="number" name="Hotel">
@@ -34,14 +34,14 @@
     <h4>Aereo</h4>
     <br>
      @foreach(var i in ViewBag.Aereos) {
-            <img src="@Url.Content(i)" width="240" height="auto" alt="aereo"> </img>
+            <img src="@Url.Content(i)" width="240" height="120" alt="aereo"> </img>
         }
      <input type="number" name="Aereo">
      <br>
     <h4>Excursion</h4>
     <br>  
       @foreach(var i in ViewBag.Excursiones) {
-            <img src="@Url.Content(i)" width="240" height="auto" alt="excursion"> </img>
+            <img src="@Url.Content(i)" width="240" height="120" alt="excursion"> </img>
         }
      <input type="number" name="Excursion">   
     <br>
